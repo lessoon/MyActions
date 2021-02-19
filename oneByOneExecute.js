@@ -15,9 +15,11 @@ const Secrets = {
 let CookieJDs = [];
 
 async function downFile() {
+    console.log(`开始下载${Secrets.SyncUrl}`);
     let response = await axios.get(Secrets.SyncUrl);
     let content = response.data;
     await fs.writeFileSync("./temp.js", content, "utf8");
+    console.log(`下载完成${Secrets.SyncUrl}`);
 }
 
 async function changeFiele(content, cookie) {
@@ -52,6 +54,8 @@ async function start() {
     }
     CookieJDs = Secrets.JD_COOKIE.split("&");
     console.log(`当前共${CookieJDs.length}个账号需要签到`);
+    console.log(`SyncUrl 地址为：${Secrets.SYNCURL}`);
+    console.log(`SyncUrl 地址为：${Secrets.SyncUrl}`);
     // 下载最新代码
     await downFile();
     console.log("下载代码完毕");

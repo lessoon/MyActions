@@ -21,7 +21,7 @@ jobs:
                   node-version: "12.x"
             - name: Run app
               run: npm install
-            - run: node JD_DailyBonus.js
+            - run: node app.js
               env:
                   JD_COOKIE: ${{ secrets.JD_COOKIE }}
                   JD_BEAN_STOP: ${{ secrets.JD_BEAN_STOP }}

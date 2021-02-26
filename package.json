@@ -20,6 +20,8 @@
     },
     "homepage": "https://github.com/sazn1314/MyActions#readme",
     "dependencies": {
+        "fs": "^0.0.1-security",
+        "child_processes": "^0.1.0",
         "request": "^2.88.2",
         "request-promise": "^4.2.5",
         "crypto-js": "^4.0.0",

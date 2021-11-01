@@ -31,7 +31,7 @@ BoxJs或QX Gallery订阅地址: https://raw.githubusercontent.com/NobyDa/Script/
 
 var Key = process.env.ANQI_JD_COOKIE; //该参数已废弃; 仅用于下游脚本的兼容, 请使用json串数据 ↓
 
-// var DualKey = process.env.JD_COOKIE; //该参数已废弃; 仅用于下游脚本的兼容, 请使用json串数据  ↓
+var DualKey = process.env.JD_COOKIE; //该参数已废弃; 仅用于下游脚本的兼容, 请使用json串数据  ↓
 
 // var OtherKey = process.env.ANQI_JD_COOKIE; //无限账号Cookie json串数据, 请严格按照json格式填写, 具体格式请看以下样例:
 

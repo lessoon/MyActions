@@ -24,6 +24,7 @@ jobs:
             - run: node app.js
               env:
                   JD_COOKIE: ${{ secrets.JD_COOKIE }}
+                  ANQI_JD_COOKIE: ${{ secrets.ANQI_JD_COOKIE }}
                   JD_BEAN_STOP: ${{ secrets.JD_BEAN_STOP }}
                   PUSH_KEY: ${{ secrets.PUSH_KEY }}
                   BARK_PUSH: ${{ secrets.BARK_PUSH }}
